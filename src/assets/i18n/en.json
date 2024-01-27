@@ -1,0 +1,9 @@
+{
+  "VoteButton": {
+    "Tooltip": {
+      "Like": "Like",
+      "Dislike": "Dislike",
+      "SuperLike": "Super Like"
+    }
+  }
+}
