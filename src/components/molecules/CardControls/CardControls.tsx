@@ -17,13 +17,25 @@ const CardControls = ({
 
   return (
     <div className="flex justify-between absolute bottom-4 left-0 right-0 px-8">
-      <VoteButton onClick={onDislike} className="hover:bg-red-100">
+      <VoteButton
+        onClick={onDislike}
+        className="hover:bg-red-100"
+        tooltipText={t("Tooltip.Dislike")}
+      >
         <FaXmark className="w-8 h-8 text-red-600 group-hover:text-red-800 duration-300" />
       </VoteButton>
-      <VoteButton onClick={onSuperLike} className="hover:bg-blue-100">
+      <VoteButton
+        onClick={onSuperLike}
+        className="hover:bg-blue-100"
+        tooltipText={t("Tooltip.SuperLike")}
+      >
         <FaStar className="w-6 h-6 text-blue-600 group-hover:text-blue-800 duration-300" />
       </VoteButton>
-      <VoteButton onClick={onLike} className="hover:bg-green-100">
+      <VoteButton
+        onClick={onLike}
+        className="hover:bg-green-100"
+        tooltipText={t("Tooltip.Like")}
+      >
         <FaHeart className="w-6 h-6 text-green-600 group-hover:text-green-800 duration-300" />
       </VoteButton>
     </div>
