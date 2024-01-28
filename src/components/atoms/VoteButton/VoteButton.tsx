@@ -12,11 +12,11 @@ type VoteButtonProps = ComponentProps<"button"> & {
   tooltipText?: string;
 };
 
-const VoteButton = ({ className, ...props }: VoteButtonProps) => {
+const VoteButton = ({ className, tooltipText, ...props }: VoteButtonProps) => {
   return (
     <TooltipProvider>
       <Tooltip>
-        <TooltipTrigger>
+        <TooltipTrigger asChild>
           <Button
             className={`group w-16 h-16 bg-white rounded-full shadow-lg focus:outline-none hover:bg-slate-100 duration-300 flex items-center justify-center ${
               className || ""
@@ -26,11 +26,7 @@ const VoteButton = ({ className, ...props }: VoteButtonProps) => {
             {props.children}
           </Button>
         </TooltipTrigger>
-        {props.tooltipText && (
-          <TooltipContent>
-            <p>{props.tooltipText}</p>
-          </TooltipContent>
-        )}
+        {tooltipText && <TooltipContent>{tooltipText}</TooltipContent>}
       </Tooltip>
     </TooltipProvider>
   );
