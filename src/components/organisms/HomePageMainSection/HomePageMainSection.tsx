@@ -11,9 +11,9 @@ const HomePageMainSection = () => {
 
   return (
     <div className="mx-auto max-w-96">
-      <div className="relative">
+      <div className="relative h-[70vh]">
         <img
-          className="w-full rounded-2xl shadow-2xl"
+          className="w-full h-full object-cover rounded-2xl shadow-2xl"
           src={currentInspiration.imageUrl}
           alt="main"
         />
