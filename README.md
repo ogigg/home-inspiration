@@ -1,5 +1,8 @@
 # Tinder-like app to browse home interior inspirations
 
+![image](https://github.com/ogigg/home-inspiration/assets/37368740/0052e2e4-7fc4-4251-a1c0-cf9f4684b6ca)
+
+
 Goal of this project is to try new libraries such as zustand and shadcn ui
 
 ## This project uses
