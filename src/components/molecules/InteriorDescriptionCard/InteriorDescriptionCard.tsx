@@ -5,17 +5,10 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Inspiration } from "@/models/Inspirations";
 import { FaHouse, FaPuzzlePiece, FaPalette } from "react-icons/fa6";
 
-type InteriorDescriptionCardProps = {
-  title: string;
-  description: string;
-  room: string;
-  style: string;
-  colorPalette: string;
-};
-
-const InteriorDescriptionCard = (props: InteriorDescriptionCardProps) => {
+const InteriorDescriptionCard = (props: Inspiration) => {
   return (
     <Card className="mt-4">
       <CardHeader>
@@ -32,9 +25,7 @@ const InteriorDescriptionCard = (props: InteriorDescriptionCardProps) => {
           </div>
         </CardDescription>
       </CardHeader>
-      <CardContent>
-        <p>{props.description}</p>
-      </CardContent>
+      <CardContent>{props.description}</CardContent>
     </Card>
   );
 };
