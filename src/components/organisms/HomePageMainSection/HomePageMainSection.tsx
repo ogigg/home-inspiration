@@ -1,7 +1,9 @@
+import TileButton from "@/components/atoms/TileButton/TileButton";
 import CardControls from "@/components/molecules/CardControls/CardControls";
 import InteriorDescriptionCard from "@/components/molecules/InteriorDescriptionCard/InteriorDescriptionCard";
 import { useInspirationsStore } from "@/store/inspirations";
-
+import { FaHouse } from "react-icons/fa6";
+import RoomPicker from "../RoomPicker/RoomPicker";
 const HomePageMainSection = () => {
   const { currentInspiration, vote } = useInspirationsStore();
 
@@ -10,7 +12,7 @@ const HomePageMainSection = () => {
   }
 
   return (
-    <div className="mx-auto max-w-96">
+    <div className="mx-auto max-w-lg">
       <div className="relative h-[70vh]">
         <img
           className="w-full h-full object-cover rounded-2xl shadow-2xl"
@@ -24,6 +26,7 @@ const HomePageMainSection = () => {
         />
       </div>
       <InteriorDescriptionCard {...currentInspiration} />
+      <RoomPicker />
     </div>
   );
 };

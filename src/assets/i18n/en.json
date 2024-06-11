@@ -5,5 +5,24 @@
       "SuperLike": "I love it!",
       "Like": "I like it"
     }
+  },
+  "RoomPicker": {
+    "Title": "Choose rooms that you are interested in",
+    "Subtitle": "We will show you more content related to these rooms",
+    "Bathroom": "Bathroom",
+    "Bedroom": "Bedroom",
+    "DiningRoom": "Dining Room",
+    "Kitchen": "Kitchen",
+    "LivingRoom": "Living Room",
+    "Office": "Office",
+    "Outdoor": "Outdoor",
+    "KidsRoom": "Kids Room",
+    "Garage": "Garage",
+    "LaundryRoom": "Laundry Room",
+    "Hallway": "Hallway",
+    "Basement": "Basement",
+    "Attic": "Attic",
+    "Staircase": "Staircase",
+    "Closet": "Closet"
   }
 }
